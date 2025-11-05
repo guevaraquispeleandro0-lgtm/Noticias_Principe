@@ -1,0 +1,10 @@
+- [ ] Rename index.php to index.html and remove PHP code
+- [ ] Rename admin.php to admin.html and remove PHP code
+- [ ] Rename login.php to login.html and remove PHP code
+- [ ] Rename local.php to local.html and remove PHP code
+- [ ] Rename deportes.php to deportes.html and remove PHP code
+- [ ] Rename reuniones.php to reuniones.html and remove PHP code
+- [ ] Rename actividades.php to actividades.html and remove PHP code
+- [ ] Remove functions.php
+- [ ] Update navigation links to .html in all files
+- [ ] Test the app to ensure JS loads news from localStorage

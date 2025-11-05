@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "title": "Inauguración del Nuevo Parque en el Centro",
+    "content": "El alcalde inauguró hoy el nuevo parque central de Santa Cruz, un espacio verde que beneficiará a miles de familias. El parque cuenta con áreas de recreación, juegos infantiles y zonas de descanso. La inversión fue de más de 2 millones de bolivianos y se realizó con fondos municipales.",
+    "category": "local",
+    "date": "2025-01-15",
+    "imagePath": "images/parque.jpg",
+    "featured": true
+  },
+  {
+    "id": "2",
+    "title": "Equipo Local Gana Campeonato Regional",
+    "content": "El equipo de fútbol de General Saavedra se coronó campeón del torneo regional tras una emocionante final. El partido terminó 2-1 a favor del equipo local, con goles de Juan Pérez y María García. La celebración reunió a cientos de aficionados en la plaza principal.",
+    "category": "deportes",
+    "date": "2025-01-14",
+    "imagePath": "images/campeonato.jpg",
+    "featured": true
+  },
+  {
+    "id": "3",
+    "title": "Festival Cultural Anual Atrajo Miles de Visitantes",
+    "content": "El Festival Cultural de Santa Cruz cerró sus puertas con un récord de asistencia. Durante tres días, artistas locales y nacionales presentaron música, danza y teatro tradicional. El evento generó importantes ingresos para la economía local.",
+    "category": "actividades",
+    "date": "2025-01-13",
+    "imagePath": "images/festival.jpg",
+    "featured": false
+  },
+  {
+    "id": "4",
+    "title": "Reunión Municipal Discute Presupuesto 2025",
+    "content": "Los concejales municipales se reunieron ayer para discutir el presupuesto para el próximo año. Se aprobaron fondos adicionales para educación y salud, así como mejoras en la infraestructura vial. La reunión contó con la participación de representantes vecinales.",
+    "category": "reuniones",
+    "date": "2025-01-12",
+    "imagePath": "images/reunion.jpg",
+    "featured": false
+  },
+  {
+    "id": "5",
+    "title": "Nueva Escuela Inaugurada en Barrio Norte",
+    "content": "La nueva escuela primaria del barrio Norte abrió sus puertas con capacidad para 300 estudiantes. La institución cuenta con aulas modernas, laboratorio de ciencias y cancha deportiva. Padres de familia expresaron su satisfacción con las instalaciones.",
+    "category": "local",
+    "date": "2025-01-11",
+    "imagePath": "images/escuela.jpg",
+    "featured": false
+  },
+  {
+    "id": "6",
+    "title": "Torneo de Tenis Local en Marcha",
+    "content": "Comenzó el torneo anual de tenis en las canchas municipales. Participan más de 50 jugadores de diferentes edades. Las finales están programadas para el próximo fin de semana. El ganador representará al municipio en competencias regionales.",
+    "category": "deportes",
+    "date": "2025-01-10",
+    "imagePath": "images/tenis.jpg",
+    "featured": false
+  }
+]

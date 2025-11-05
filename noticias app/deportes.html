@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOTICIAS PRINCIPE - Deportes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="date-weather">
+        <span id="currentDate"></span>
+        <span id="weather">Santa Cruz, Bolivia - 26°C</span>
+      </div>
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100076498265451&locale=es_LA" class="social-link">Facebook</a>
+      </div>
+    </div>
+    <div class="header-main">
+      <h1>NOTICIAS PRINCIPE</h1>
+      <p class="tagline">Tu fuente de información confiable</p>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="local.html" class="nav-link" data-category="local">Local</a></li>
+        <li><a href="deportes.html" class="nav-link active" data-category="deportes">Deportes</a></li>
+        <li><a href="actividades.html" class="nav-link" data-category="actividades">Actividades</a></li>
+        <li><a href="reuniones.html" class="nav-link" data-category="reuniones">Reuniones</a></li>
+        <li><a href="login.html" class="nav-link">Administrar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <div class="featured-section">
+        <h2 class="section-title">Portada</h2>
+        <div id="featuredNews" class="featured-grid">
+          <!-- News loaded by JS -->
+        </div>
+      </div>
+
+      <div class="content-grid">
+        <div class="main-articles">
+          <h2 class="section-title">Noticias de Deportes</h2>
+          <div id="newsList" class="news-grid">
+            <!-- News loaded by JS -->
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-section">
+            <h3>Clima - General Angustin Saavedra</h3>
+            <div class="weather-widget">
+              <div class="weather-info">
+                <div class="weather-icon">☁️</div>
+                <div class="weather-details">
+                  <p class="temperature">26°C</p>
+                  <p class="condition">Nublado</p>
+                  <p class="location">Santa Cruz, Bolivia</p>
+                </div>
+              </div>
+              <div class="weather-forecast">
+                <div class="forecast-day">
+                  <span>Hoy</span>
+                  <span>26°C</span>
+                </div>
+                <div class="forecast-day">
+                  <span>Mañana</span>
+                  <span>26°C</span>
+                </div>
+                <div class="forecast-day">
+                  <span>Pasado</span>
+                  <span>30°C</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-section">
+            <h3>Últimas Noticias</h3>
+            <div id="sidebarNews" class="sidebar-news">
+              <!-- Sidebar news loaded by JS -->
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>NOTICIAS PRINCIPE</h4>
+          <p>Tu diario digital de confianza en Santa Cruz, Bolivia.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Contacto</h4>
+          <p>Teléfono: +591 3 123 4567</p>
+        </div>
+        <div class="footer-section">
+          <h4>Enlaces</h4>
+          <ul>
+            <li><a href="privacy-policy.html">Política de Privacidad</a></li>
+            <li><a href="terms-of-use.html">Términos de Uso</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 NOTICIAS PRINCIPE.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal para imagen completa -->
+  <div id="imageModal" class="image-modal">
+    <span class="image-close" onclick="closeImageModal()">&times;</span>
+    <img class="image-modal-content" id="fullImage" onclick="zoomImage()">
+  </div>
+
+  <script>
+    window.category = 'deportes';
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>

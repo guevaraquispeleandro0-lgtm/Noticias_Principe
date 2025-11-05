@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Administrativo - NOTICIAS PRINCIPE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .success { color: green; font-weight: bold; }
+    .error { color: red; font-weight: bold; }
+    .news-admin-list { margin-top: 20px; }
+    .news-admin-item { border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; }
+    .news-admin-item h4 { margin: 0 0 5px 0; }
+    .news-admin-item p { margin: 5px 0; }
+    .news-admin-item .actions { margin-top: 10px; }
+    .btn-edit, .btn-delete { padding: 5px 10px; margin-right: 5px; cursor: pointer; }
+    .btn-edit { background: #007bff; color: white; border: none; }
+    .btn-delete { background: #dc3545; color: white; border: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="date-weather">
+        <span id="currentDate"></span>
+        <span id="weather">Santa Cruz, Bolivia - 28°C</span>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">Instagram</a>
+      </div>
+    </div>
+    <div class="header-main">
+      <h1>NOTICIAS PRINCIPE</h1>
+      <p class="tagline">Panel Administrativo</p>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="local.html" class="nav-link">Local</a></li>
+        <li><a href="deportes.html" class="nav-link">Deportes</a></li>
+        <li><a href="actividades.html" class="nav-link">Actividades</a></li>
+        <li><a href="reuniones.html" class="nav-link">Reuniones</a></li>
+        <li><a href="admin.html" class="nav-link active">Administrar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="admin-form">
+        <h2>Agregar Nueva Noticia</h2>
+        <div id="message"></div>
+        <form id="newsForm">
+          <div class="form-group">
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" required>
+          </div>
+          <div class="form-group">
+            <label for="content">Contenido:</label>
+            <textarea id="content" name="content" rows="8" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="image">Imagen (opcional):</label>
+            <input type="file" id="image" name="image" accept=".jpg,.png,.jpeg,.gif" multiple>
+          </div>
+          <div class="form-group">
+            <label for="category">Categoría:</label>
+            <select id="category" name="category" required>
+              <option value="">Seleccionar categoría</option>
+              <option value="local">Local</option>
+              <option value="deportes">Deportes</option>
+              <option value="actividades">Actividades</option>
+              <option value="reuniones">Reuniones</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-submit">Publicar Noticia</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Noticias Publicadas</h2>
+        <div id="adminNewsList" class="news-admin-list">
+          <!-- News loaded by JS -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>NOTICIAS PRINCIPE</h4>
+          <p>Tu diario digital de confianza en Santa Cruz, Bolivia.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Contacto</h4>
+          <p>Teléfono: +591 3 123 4567</p>
+        </div>
+        <div class="footer-section">
+          <h4>Enlaces</h4>
+          <ul>
+            <li><a href="privacy-policy.html">Política de Privacidad</a></li>
+            <li><a href="terms-of-use.html">Términos de Uso</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 NOTICIAS PRINCIPE. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal para editar noticia -->
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeEditModal()">&times;</span>
+      <h2>Editar Noticia</h2>
+      <form id="editForm">
+        <input type="hidden" id="editId">
+        <div class="form-group">
+          <label for="editTitle">Título:</label>
+          <input type="text" id="editTitle" required>
+        </div>
+        <div class="form-group">
+          <label for="editContent">Contenido:</label>
+          <textarea id="editContent" rows="8" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="editImage">Nueva Imagen (opcional):</label>
+          <input type="file" id="editImage" accept=".jpg,.png,.jpeg,.gif" multiple>
+        </div>
+        <div class="form-group">
+          <label for="editCategory">Categoría:</label>
+          <select id="editCategory" required>
+            <option value="local">Local</option>
+            <option value="deportes">Deportes</option>
+            <option value="actividades">Actividades</option>
+            <option value="reuniones">Reuniones</option>
+          </select>
+        </div>
+        <button type="submit">Actualizar Noticia</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
